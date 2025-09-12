@@ -28,6 +28,18 @@ TASK 3:
 Write code that takes two numbers as input (an integer and a float), 
 performs addition, subtraction, multiplication, and division, and prints the results.
 """
+floating_number = float(input("enter a desimal point "))
+# made a user input to type in a floating point value
+i_nteger = int(input("enter a whole number"))
+# made a user input to type in an integer value
+sum = floating_number + i_nteger - 2
+# created a "sum" varriable and added i_nteger to floating_number and the subtracted 2
+product = sum * 13 
+#created a "product" varriable to multiply the "sum" value by 13
+quotient = product / 2
+# made "quatient" that divides the "product" value by 2
+print(quotient)
+# printed the value of "quotient"
 
 
 """
@@ -36,7 +48,12 @@ TASK 4:
 Create a dictionary with keys as fruit names and values as their respective quantities. 
 Then print out the quantity of one of the fruits.
 """
-
+{
+    'letters':27,
+    'single_digit_integers':10
+}
+# ditionary holding the number of letters in the alphabet and the number of single digit integers
+print(dict("single_digit_integers"))
 
 """
 TASK 5:
@@ -44,7 +61,9 @@ TASK 5:
 Create a string variable with that is a list of numbers and convert that string into a tuple.
 Then print out the both the original string and tuple.
 """
-
+my_list = ["1","2","3","4"]
+tuple(my_list)
+print(my_list)
 """
 TASK 6:
 
@@ -53,3 +72,6 @@ Use the join() function to combine all subjects into a single string separated b
 Then create another version using " - " as the separator.
 Print both the original list and both joined strings.
 """
+Subjects = ["Algebra","Fullstack development","Advanced orchestra"," Statistics"]
+my_string = "^".join (Subjects)
+print(my_string)
