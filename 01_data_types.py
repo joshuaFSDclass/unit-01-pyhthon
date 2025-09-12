@@ -30,15 +30,19 @@ performs addition, subtraction, multiplication, and division, and prints the res
 """
 floating_number = float(input("enter a desimal point "))
 # made a user input to type in a floating point value
-i_nteger = int(input("enter a whole number"))
+i_nteger = int(input("enter a whole number "))
 # made a user input to type in an integer value
-sum = floating_number + i_nteger - 2
+sum1 = floating_number + i_nteger 
+sum2 = floating_number - i_nteger
 # created a "sum" varriable and added i_nteger to floating_number and the subtracted 2
-product = sum * 13 
+product = floating_number * i_nteger 
 #created a "product" varriable to multiply the "sum" value by 13
-quotient = product / 2
+quotient = floating_number / i_nteger
 # made "quatient" that divides the "product" value by 2
-print(quotient)
+print("quotients ", quotient)
+print("product ",product)
+print("the first Sum: ",sum1)
+print(" the second Sum: ",sum2)
 # printed the value of "quotient"
 
 
@@ -48,21 +52,24 @@ TASK 4:
 Create a dictionary with keys as fruit names and values as their respective quantities. 
 Then print out the quantity of one of the fruits.
 """
-{
-    'letters':27,
-    'single_digit_integers':10
-}
-# ditionary holding the number of letters in the alphabet and the number of single digit integers
-print(dict("single_digit_integers"))
-
+fruit =  {
+                'bannana':27,
+                'coconut':10
+            }
+# ditionary holding the number of fruit in the store 
+print("there are", fruit["bannana"],"Bannanas in the store")
+# printing the number of bannanas in the store
+print("there are", fruit["coconut"],"Coconuts in the store")
+# printing the nuber of coconuts in the store 
 """
 TASK 5:
 
 Create a string variable with that is a list of numbers and convert that string into a tuple.
 Then print out the both the original string and tuple.
 """
-my_list = ["1","2","3","4"]
+my_list = "1,2,3,4,5"
 tuple(my_list)
+# turned the my_list into the a tuple. 
 print(my_list)
 """
 TASK 6:
@@ -72,6 +79,9 @@ Use the join() function to combine all subjects into a single string separated b
 Then create another version using " - " as the separator.
 Print both the original list and both joined strings.
 """
-Subjects = ["Algebra","Fullstack development","Advanced orchestra"," Statistics"]
-my_string = "^".join (Subjects)
+Subjects = ["Algebra","Fullstack development","Advanced orchestra","Statistics"]
+#list of the subject that i like throughout highschool
+my_string = "-".join (Subjects)
+# i joint the bujects with a dash 
 print(my_string)
+print(Subjects)
