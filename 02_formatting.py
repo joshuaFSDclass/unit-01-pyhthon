@@ -48,6 +48,7 @@ TASK 4:
 Write a program that takes a person's name and age as input and prints it
 """
 name = input("what is your name: ")
+#inptu
 age = input("what is your age: ")
 scentence = f"your name is {name} and your age is {age}"
 print(scentence)
