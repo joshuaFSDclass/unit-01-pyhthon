@@ -18,21 +18,25 @@ Then generate 5 random floating-point numbers between 10 and 20.
 Print both sets of numbers.
 """
 from random import uniform, random
+#import from the random modules uniform and random
 for x in range(5):
     randDec = random()
     print(randDec)
+#repeats decimal values between 0 and 1, 5 times
 for x in range(5):
     randDec1 = uniform(10.0, 20.0)
     print(randDec1)
-
+#repeats random float values in between 10 to 20 5 times 
 """
 Task 3 (random module):
 Create a list of colors: ["red", "blue", "green", "yellow", "purple"].
 Write a program that randomly selects and prints 3 colors from this list without replacement.
 """
 from random import choice
+#import choice from the random modules
 colors = ["red","blue","green","yellow","purple"]
 for v in range(3):
+    #repeats the three random items from the list
     print(choice(colors))
 
 
@@ -42,7 +46,9 @@ Write a program that creates a list of numbers from 1 to 10, then shuffles the l
 and prints the shuffled result.
 """
 numlist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
+# list of number form 1-10
 from random import shuffle
+#shuffles the number in a random order diplays them in the new order
 for z in numlist:
     shuffle(numlist)
     print()
