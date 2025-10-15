@@ -31,3 +31,10 @@ Excercise 4:
 Write a program that asks the user for their birthdate and calculates their current 
 age using the datetime module.
 """
+print()
+print()
+birth = input("When is your birthday? (m/d/Y)")
+birthed = datetime.strptime(birth, "%m/%d/%Y")
+birthed2 = datetime.now() - birthed
+birthed3 = birthed2.days//365
+print("you are", birthed, "year old")
