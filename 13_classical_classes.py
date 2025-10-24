@@ -58,3 +58,13 @@ class BankAccount:
     def __init__(self, balance, owner):
         self.balance = balance
         self.owner = owner
+        # Adds to the value of your account
+    def deposit(self, amount):  
+        if amount > 0:
+            self.balance += amount
+        print(f"Successfullt depostitied ${amount}. Your new balance is ${self.balance}")
+    # Subtracts how much you would like to withdraw from your balance
+    def withdraw(self, amount_2):
+        if amount_2 < 0:
+            self.balance -= amount_2
+            print(f"Successfully withdrew ${amount_2}. Your new balance is ${self.balance}")
